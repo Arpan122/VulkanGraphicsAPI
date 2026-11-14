@@ -13,6 +13,6 @@ namespace GraphicsEngine {
 
 	private:
 		Window window{WIDTH, HEIGHT, "Vulkan G-Engine"};
-		Pipeline pipeline{ "/Shaders/simple_shader.vert.spv", "/Shaders/simple_shader.frag.spv" };
+		Pipeline pipeline{ "src/Shaders/simple_shader.vert.spv", "src/Shaders/simple_shader.frag.spv" };
 	};
 }

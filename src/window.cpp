@@ -1,4 +1,5 @@
 #include "Headers/window.hpp"
+#include <stdexcept>
 
 namespace GraphicsEngine {
 	Window::Window(int width, int height, std::string title) : width(width), height(height), title(title) {
@@ -15,4 +16,11 @@ namespace GraphicsEngine {
 		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 		window = glfwCreateWindow(width, height, title.c_str(), nullptr, nullptr);
 	}
+
+	void Window::createWindowSurface(VkInstance instance, VkSurfaceKHR* surface) {
+		if (glfwCreateWindowSurface(instance, window, nullptr, surface) != VK_SUCCESS) {
+			throw std::runtime_error("Failed to create window surface!");
+		})
+	}
+
 }

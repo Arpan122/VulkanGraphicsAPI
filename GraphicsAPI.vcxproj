@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\app.cpp" />
+    <ClCompile Include="src\device.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Pipeline.cpp" />
     <ClCompile Include="src\window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Headers\app.hpp" />
+    <ClInclude Include="src\Headers\device.hpp" />
     <ClInclude Include="src\Headers\Pipeline.hpp" />
     <ClInclude Include="src\Headers\window.hpp" />
   </ItemGroup>
