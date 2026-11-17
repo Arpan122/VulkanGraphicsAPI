@@ -18,5 +18,6 @@ namespace GraphicsEngine {
 		Window window{ WIDTH, HEIGHT, title };
 		Pipeline pipeline{ "src/Shaders/simple_shader.vert.spv", "src/Shaders/simple_shader.frag.spv" };
 		Instance instance{ true, APP_NAME };
+		VkDebugUtilsMessengerEXT debugMessenger{ nullptr };
 	};
 }

@@ -14,6 +14,6 @@ namespace GraphicsEngine {
 	private:
 		VkInstance instance;
 		
-		bool checkExtensionSupport(const std::vector<const char*>& extensions, const std::vector<const char*>& layers);
+		bool checkSupport(const std::vector<const char*>& extensions, const std::vector<const char*>& layers, bool debug);
 	};
 }
