@@ -1,8 +1,7 @@
 #pragma once
 
 #include "window.hpp"
-#include <string>
-#include <vector>
+#include "config.hpp"
 
 namespace GraphicsEngine {
 

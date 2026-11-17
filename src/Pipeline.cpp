@@ -1,6 +1,4 @@
 #include "Headers/Pipeline.hpp"
-#include <fstream>
-#include <iostream>
 
 namespace GraphicsEngine {
 	Pipeline::Pipeline(const std::string& vertexShaderPath, const std::string& fragmentShaderPath) {
@@ -28,7 +26,7 @@ namespace GraphicsEngine {
 		auto vertexShaderCode = readFile(vertexShaderPath);
 		auto fragmentShaderCode = readFile(fragmentShaderPath);
 
-		std::cout << "Vertex Shader Code Size: " << vertexShaderCode.size() << " bytes" << std::endl;
-		std::cout << "Fragment Shader Code Size: " << fragmentShaderCode.size() << " bytes" << std::endl;
+		//std::cout << "Vertex Shader Code Size: " << vertexShaderCode.size() << " bytes" << std::endl;
+		//std::cout << "Fragment Shader Code Size: " << fragmentShaderCode.size() << " bytes" << std::endl;
 	}
 } 
