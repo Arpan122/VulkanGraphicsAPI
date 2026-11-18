@@ -1,11 +1,11 @@
-#include "Headers/app.hpp"
+#include "Headers/engine.hpp"
 #include <iostream>
 
 
 int main() {
-	GraphicsEngine::App app{};
+	GraphicsEngine::Engine Engine{};
 	try {
-		app.run();
+		Engine.run();
 	} catch (const std::exception& e) {
 		std::cerr << e.what() << std::endl;
 		return EXIT_FAILURE;
